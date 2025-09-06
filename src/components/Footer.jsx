@@ -174,7 +174,7 @@ const Footer = () => {
           transition={{ delay: 0.8, duration: 0.8 }}
         >
           <p className="text-muted-foreground text-sm mb-4 md:mb-0">
-            © 2024 SynergySphere. All rights reserved. Made with ❤️ for productive teams.
+            © 2025 SynergySphere. Built at Odoo x NMIT Hackathon 2025.
           </p>
           
           {/* Scroll to Top Button */}
