@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom'; // ✨ 1. IMPORT LINK
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -19,9 +20,9 @@ const Navbar = () => {
   const navLinks = [
     { name: 'Home', href: '#home' },
     { name: 'Features', href: '#features' },
-    { name: 'Pricing', href: '#pricing' },
     { name: 'About', href: '#about' },
     { name: 'Contact', href: '#contact' },
+    { name: 'Login', href: 'login.html' },
   ];
 
   return (
@@ -68,16 +69,18 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Desktop CTA Button */}
+          {/* ✨ 2. UPDATED DESKTOP CTA BUTTON */}
           <motion.div
             className="hidden md:block"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.8 }}
           >
-            <Button variant="hero" size="default">
-              Get Started
-            </Button>
+            <Link to="/get-started">
+              <Button variant="hero" size="default">
+                Get Started
+              </Button>
+            </Link>
           </motion.div>
 
           {/* Mobile Menu Button */}
@@ -115,9 +118,12 @@ const Navbar = () => {
                 {link.name}
               </a>
             ))}
-            <Button variant="hero" size="default" className="w-full mt-4">
-              Get Started
-            </Button>
+            {/* ✨ 3. UPDATED MOBILE CTA BUTTON */}
+            <Link to="/get-started" onClick={() => setIsMobileMenuOpen(false)}>
+              <Button variant="hero" size="default" className="w-full mt-4">
+                Get Started
+              </Button>
+            </Link>
           </div>
         </motion.div>
       </div>
