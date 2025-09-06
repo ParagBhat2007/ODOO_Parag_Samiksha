@@ -53,8 +53,21 @@ const Footer = () => {
           >
             {/* Logo */}
             <div className="flex items-center space-x-2 mb-6">
-              <div className="w-10 h-10 rounded-xl hero-gradient flex items-center justify-center shadow-soft">
-                <span className="text-white font-bold text-lg">S</span>
+              <div className="w-10 h-10 ">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className="w-7 h-7">
+                  <defs>
+                    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" style={{stopColor:"#3b82f6"}} />
+                      <stop offset="100%" style={{stopColor:"#14b8a6"}} />
+                    </linearGradient>
+                    <linearGradient id="gradient2" x1="100%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" style={{stopColor:"#6366f1"}} />
+                      <stop offset="100%" style={{stopColor:"#3b82f6"}} />
+                    </linearGradient>
+                  </defs>
+                  <path d="M50 0 C77.6 0 100 22.4 100 50 C100 65 92.5 78.4 81.3 87.1 C79.3 74.6 71.9 63.6 61.2 56.5 C72.2 49.3 75.8 35.5 69.1 24.1 C62.3 12.7 48.9 7.9 37.1 14.1 C32 16.8 27.8 21 24.9 26 C15.1 36.4 14.2 51.6 22.1 63.2 C28.5 72.5 40 78.3 50.8 76.9 C43.2 85.8 32.5 91.5 20.3 91.5 C9.1 91.5 0 82.4 0 71.2 C0 42.9 22.4 20.5 50 20.5 C50 13.7 50 6.8 50 0 Z" fill="url(#gradient1)"/>
+                  <path d="M50 100 C22.4 100 0 77.6 0 50 C0 35 7.5 21.6 18.7 12.9 C20.7 25.4 28.1 36.4 38.8 43.5 C27.8 50.7 24.2 64.5 30.9 75.9 C37.7 87.3 51.1 92.1 62.9 85.9 C68 83.2 72.2 79 75.1 74 C84.9 63.6 85.8 48.4 77.9 36.8 C71.5 27.5 60 21.7 49.2 23.1 C56.8 14.2 67.5 8.5 79.7 8.5 C90.9 8.5 100 17.6 100 28.8 C100 57.1 77.6 79.5 50 79.5 C50 86.3 50 93.2 50 100 Z" fill="url(#gradient2)"/>
+                </svg>
               </div>
               <span className="font-heading font-bold text-2xl text-foreground">
                 SynergySphere
@@ -62,8 +75,7 @@ const Footer = () => {
             </div>
 
             <p className="text-muted-foreground leading-relaxed mb-8 max-w-md">
-              Empowering teams to collaborate smarter and achieve more together. 
-              Transform your workflow with our intuitive project management platform.
+              Developed by Parag Bhat and Samiksha Musale
             </p>
 
             {/* Social Links */}
