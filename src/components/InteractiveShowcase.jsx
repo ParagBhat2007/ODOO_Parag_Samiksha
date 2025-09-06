@@ -65,7 +65,7 @@ const InteractiveShowcase = () => {
     }
   ];
 
-  const renderPreview = (item: typeof showcaseItems[0]) => {
+  const renderPreview = (item) => {
     switch (item.id) {
       case 'projects':
         return (
