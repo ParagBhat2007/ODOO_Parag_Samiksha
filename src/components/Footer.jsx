@@ -9,35 +9,25 @@ const Footer = () => {
   const footerLinks = {
     product: [
       { name: 'Features', href: '#features' },
-      { name: 'Pricing', href: '#pricing' },
-      { name: 'API', href: '#api' },
-      { name: 'Integrations', href: '#integrations' }
     ],
     company: [
       { name: 'About', href: '#about' },
-      { name: 'Careers', href: '#careers' },
-      { name: 'Blog', href: '#blog' },
-      { name: 'Press', href: '#press' }
     ],
     support: [
       { name: 'Help Center', href: '#help' },
       { name: 'Contact', href: '#contact' },
-      { name: 'Status', href: '#status' },
-      { name: 'Security', href: '#security' }
     ],
     legal: [
       { name: 'Privacy', href: '#privacy' },
       { name: 'Terms', href: '#terms' },
-      { name: 'Cookie Policy', href: '#cookies' },
-      { name: 'GDPR', href: '#gdpr' }
     ]
   };
 
   const socialLinks = [
-    { icon: Github, href: '#github', label: 'GitHub' },
-    { icon: Linkedin, href: '#linkedin', label: 'LinkedIn' },
+    { icon: Github, href: 'https://github.com/ParagBhat2007', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/parag-bhat/', label: 'LinkedIn' },
     { icon: Twitter, href: '#twitter', label: 'Twitter' },
-    { icon: Mail, href: '#contact', label: 'Contact' }
+    { icon: Mail, href: 'paragbhat2007@gmail.com', label: 'Contact' }
   ];
 
   return (
